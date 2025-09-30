@@ -6,12 +6,25 @@
 //
 
 import SwiftUI
+internal import Combine
+
+class AppState: ObservableObject {
+    @Published var isLoggedIn = false
+}
 
 @main
-struct cred_vueApp: App {
+struct MyApp: App {
+    @StateObject private var appState = AppState()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if appState.isLoggedIn {
+                ContentView().environmentObject(appState)
+                    .transition(.move(edge: .top).combined(with: .opacity))
+            } else {
+                OnboardingView(show: .constant(true)).environmentObject(appState)
+                    .transition(.move(edge: .top).combined(with: .opacity))
+            }
         }
     }
 }
