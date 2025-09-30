@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		07F79E652E8C079B00DCE168 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 07F79E642E8C079B00DCE168 /* RiveRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		42691B7E2E897D9F00259BEA /* cred-vue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cred-vue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F79E652E8C079B00DCE168 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "cred-vue";
 			packageProductDependencies = (
+				07F79E642E8C079B00DCE168 /* RiveRuntime */,
 			);
 			productName = "cred-vue";
 			productReference = 42691B7E2E897D9F00259BEA /* cred-vue.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 42691B752E897D9F00259BEA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07F79E632E8C079B00DCE168 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 42691B7F2E897D9F00259BEA /* Products */;
 			projectDirPath = "";
@@ -334,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07F79E632E8C079B00DCE168 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.11.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07F79E642E8C079B00DCE168 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07F79E632E8C079B00DCE168 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42691B762E897D9F00259BEA /* Project object */;
 }
