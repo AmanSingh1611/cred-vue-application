@@ -142,7 +142,7 @@ private extension ContentView {
                     .frame(height: 250)
 
                 VStack(spacing: 20){
-                    
+                    QuickActionsSection(actions: QuickAction.sampleData)
                 }
                 .padding(.horizontal, 10)
 
