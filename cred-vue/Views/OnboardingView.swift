@@ -58,7 +58,7 @@ private extension OnboardingView {
     var content: some View {
         VStack(alignment: .leading, spacing: 16) {
             
-            Text("Welcome to CREDable!")
+            Text("Welcome to CREDVue!")
                 .font(.custom(Constants.titleFont, size: Constants.titleSize))
                 .frame(width: Constants.titleWidth, alignment: .leading)
             
